@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Click</title>
+</head>
+<body>
+
+  <p>Press the buttons to change the box!</p>
+  <div id="box" class="box"></div>
+  
+  <button id="button1">Grow</button>
+  <button id="button2">Blue</button>
+  <button id="button3">Remove</button>
+  <button id="button4">Reset</button>
+  <button id="button5">Add picture</button>
+
+
+
+    <script>
+const buttons = document.querySelectorAll('button')
+const box = document.getElementById('box')
+
+function changeBox(e) {
+  if (e.target.id === 'button1') {
+    box.classList.add('translate')
+  } else if (e.target.id === 'button2') {
+    box.classList = ''
+    box.classList.add('blue')
+  } else if (e.target.id === 'button3') {
+    box.classList.add('fade')
+  } else if (e.target.id === 'button4') {
+    box.classList = ''
+    box.classList.add('box')
+  } else if (e.target.id === 'button5') {
+    box.classList.remove('box')
+    box.classList.add('img')
+  }
+}
+
+buttons.forEach(button => {
+  button.addEventListener('click', e => changeBox(e))
+})
+
+</script>
+</body>
+</html>

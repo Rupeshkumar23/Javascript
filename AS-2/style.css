@@ -1,0 +1,70 @@
+body{
+  background-color: bisque;
+}
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: #ff5714;
+    margin: 25px;
+    border-radius: 10px;
+
+  }
+ 
+  #button1, #button2, #button3, #button4, #button5 
+  {
+    border: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    font-family:'Segoe UI';
+  }
+  
+  p
+  {
+    font-family: 'Segoe UI';
+    background-color: #58ff16;
+    border: 3px solid #b6b5b5;
+    border-radius: 10px;
+    text-align: center;
+    font-size:x-large;
+  
+  }
+  .img 
+  {
+    height: 150px;
+    width: 150px;
+    background: url('../AS-2/Letsupgrade.jpg') no-repeat #fff;
+    background-size: cover;
+    margin: 25px;
+
+  }
+  .translate 
+  {
+    transform: scale(1.2);
+    transition: all 1s;
+  }
+  
+  .fade {
+    opacity: 0;
+    animation: fade 1s ease-in-out;
+  }
+  
+  .blue
+   {
+    height: 150px;
+    width: 150px;
+    background-color: #0000ce;
+    margin: 25px;
+  }
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+ 
+  
