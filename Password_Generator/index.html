@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/security.png">
+  </head>
+  <body>
+    <h2>Password Generator</h2>
+
+    <div class="container">
+      <form action="#" id="frm">
+        <div class="form-group">
+          <input type="text" id="output" />
+          <button id="btnCopy">Copy</button>
+        </div>
+        <div id="dialog" class="dialog">
+          <div class="dialog-content">
+            <p>Password copied to clipboard!📋</p>
+          </div>
+        </div>
+        <div id="dialog1" class="dialog1">
+          <div class="dialog-content1">
+            <p>There is no password to copy!📋</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="length">Password Length</label>
+          <input type="number" id="length" value="8" min="4" max="20" />
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="number" checked />
+          <label for="number">Numbers</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="captial" />
+          <label for="captial">Captial Letters</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="small" />
+          <label for="small">Small Letters</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="symbol" />
+          <label for="symbol">Symbols</label>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Generate Password</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
