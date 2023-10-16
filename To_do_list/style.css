@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+body {
+    background: #394a51;
+    text-align: center;
+    font-family: 'Autour', cursive;
+}
+
+h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#enter {
+    font-weight: normal;
+}
+
+#enter:hover {
+    background-color: #fbf2d5;
+    color: #394a51;
+}
+
+li {
+    list-style: none;
+    padding: 0px 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+li:hover {
+    background: #fdc57b;
+}
+
+
+
+.delete {
+    display: none;
+}
