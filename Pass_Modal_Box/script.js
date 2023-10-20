@@ -6,7 +6,7 @@ eyeIcon.onclick = function () {
     eyeIcon.src = "./Imgs/eye-open.png";
   } else {
     password.type = "password";
-    eyeIcon.src = "/Imgs/eye-close.png";
+    eyeIcon.src = "./Imgs/eye-close.png";
   }
 };
 // Create a Modal Box
